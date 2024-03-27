@@ -1,8 +1,8 @@
 module Main where
 
 -- import           Functions
-import Tests
-import Recursion (facGuard)
+import           Recursion (facGuard, isZero)
+import           Tests
 
 main :: IO ()
 main = do
@@ -13,7 +13,7 @@ main = do
     -- print $ inRangeTest 0 5 3 -- True
     -- print $ inRangeTest 4 5 3 -- False
 
-    print $ fac 5
+    -- print $ fac 0x5
     -- Expected [OUTPUT]
     -- 5 * fac 4
     -- 5 * 4 * fac 3
@@ -21,6 +21,12 @@ main = do
     -- 5 * 4 * 3 * 2 * fac 1
     -- 5 * 4 * 3 * 2 * 1
 
-    print "__BREAK__"
+    -- print "__BREAK__"
+    -- print $ facGuard 0x5
 
-    print $ facGuard 5
+    print "\n__OUTPUT PREVIEW__\n"
+    print $ isZero 0
+    print $ isZero 69
+
+
+
